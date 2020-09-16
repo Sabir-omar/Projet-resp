@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: DMSerifDisplay-Regular;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    @include fontFamilySize(DMSans-Medium, nth($titleSize, 6));
+}
+
+h1{
+    @include fontFamilySize(DMSerifDisplay-Regular, nth($titleSize, 1));
+}
+
+h2{
+    @include fontFamilySize(DMSerifDisplay-Regular, nth($titleSize, 2));
+    margin: 0 0 2rem 0;
+}
+
+h3{
+    @include fontFamilySize(DMSerifDisplay-Regular, nth($titleSize, 4));
+    margin: 0 0 2rem 0;
+}
+
+p{
+    line-height: 1.5rem;
+    @include fontFamilySize(DMSans-Regular, nth($titleSize, 6));
+}

@@ -1,0 +1,123 @@
+.article-main{
+    padding: 5rem 0;
+
+    background-image: url(../img/home-bg.jpg);
+    background-repeat: no-repeat;
+    
+
+    @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+        padding: 0;
+    }
+}
+
+.choice{
+    background-image:url("../img/tutor-sectionbg2.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.grid{
+    &-categories{
+        display: grid;
+
+        grid-template: 
+            1fr 1fr / auto auto auto auto
+        ;
+        gap: 1rem;
+
+        @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+            grid-template: 1fr 1fr 1fr 1fr / auto auto;
+        }
+
+        @media only screen and (max-width: #{map-get($pointsBreak, mobile)}rem){
+            grid-template: 
+                1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / auto
+            ;
+            text-align: center;
+        }
+    }
+    
+    &-choice{
+        display: grid;
+        padding: 0 2rem;
+
+        grid-template: 
+            1fr 1fr / auto auto
+        ;
+        gap: 2rem;
+
+        @media only screen and (max-width: #{map-get($pointsBreak, mobile)}rem){
+            grid-template: 
+                1fr 1fr 1fr 1fr / auto
+            ;
+        }
+    }
+
+    &-step{
+        display: grid;
+        padding: 2rem;
+
+        grid-template: 
+            1fr / auto auto auto
+        ;
+        gap: 2rem;
+
+        @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+            grid-template: 
+                1fr 1fr 1fr/ auto
+            ;
+        }
+    }
+}
+
+.categories{
+    &-border{
+        border-radius: 1rem;
+        background-color: rgb(250, 242, 237);
+        height: 10rem;
+        padding: 1.5rem;
+    }
+
+    &-img{
+        width: auto;
+        margin: 0 0 2rem 0;
+    }
+
+    &-choice{
+        margin: 0 0 2rem 0;
+    }
+
+    &-features{
+        @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+            text-align: center;
+        }
+    }
+}
+
+.subject-top{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+
+    @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+        flex-direction: column;
+    }
+}
+
+.display-tablet{
+    @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+        display: block;
+    }
+}
+
+.question{
+    @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+        margin: 0 0 4rem 0;
+    }
+}
+
+.p-step{
+    @media only screen and (max-width: #{map-get($pointsBreak, tablet)}rem){
+        margin: 1rem 0 0 1rem;
+    }
+}

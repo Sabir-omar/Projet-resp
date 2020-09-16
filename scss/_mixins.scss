@@ -1,0 +1,4 @@
+@mixin fontFamilySize($family, $size) {
+    font-family: $family;
+	font-size: #{$size}rem;
+}
